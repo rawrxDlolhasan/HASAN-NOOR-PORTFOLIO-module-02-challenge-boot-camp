@@ -71,6 +71,8 @@ p {
     background-color: rgb(168, 232, 255);
     text-align: center;
     color: white;
+    display: flex;
+    flex-direction: column;
 }
 
 #module-01-challenge-portfolio {
@@ -80,5 +82,30 @@ p {
     border-color: white;
     width: auto; height: 600px;
     margin: 33px;
-    object-fit: contain;
+}
+
+/* CONTACT */
+
+.contact-information {
+    margin: 33px;
+}
+
+.contact-information ul li {
+    display: inline-block;
+    list-style-type: none;
+    margin-right: 25px;
+    margin-left: 25px;
+    text-align: center;
+}
+
+/* FOOTER */
+
+.footer {
+    padding: 20px;
+    background-color: rgb(168, 232, 255);
+    text-align: center;
+    color: white;
+}
+
+@media only screen and (max-width: 360) {
 }
