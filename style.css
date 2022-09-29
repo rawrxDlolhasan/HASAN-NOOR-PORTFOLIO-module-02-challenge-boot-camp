@@ -15,6 +15,9 @@ header {
     padding: 20px;
     background-color: rgb(168, 232, 255);
     color: white;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
 }
 
 header h1 {
@@ -27,7 +30,6 @@ header h1 {
 header nav {
     padding-top: 15px;
     margin-right: 20px;
-    float: right;
     font-size: 20px;
 }
 
@@ -47,13 +49,16 @@ a {
 
 /* MAIN-CONTENT */
 
-p {
+.main-content {
+    text-align: center;
+}
+
+.main-content p {
     font-size: 20px;
 }
 
 .about-me-and-contact {
     padding: 20px;
-    text-align: center;
     color: rgb(168, 232, 255);
 }
 
@@ -69,10 +74,13 @@ p {
 .portfolio {
     padding: 20px;
     background-color: rgb(168, 232, 255);
-    text-align: center;
     color: white;
     display: flex;
     flex-direction: column;
+}
+
+.module-01-challenge-portfolio {
+    position: relative;
 }
 
 #module-01-challenge-portfolio {
@@ -84,7 +92,18 @@ p {
     margin: 33px;
 }
 
-/* CONTACT */
+#module-01-challenge-label {
+    position: absolute;
+    top: 80%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: rgb(168, 232, 255);
+    background-color: white;
+    padding: 20px;
+    border-style: solid;
+    border-width: 13px;
+    border-radius: 33%;
+}
 
 .contact-information {
     margin: 33px;
@@ -95,7 +114,6 @@ p {
     list-style-type: none;
     margin-right: 25px;
     margin-left: 25px;
-    text-align: center;
 }
 
 /* FOOTER */
